@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional URL Shortener</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="glass-card">
+
+        <h1>
+            <i class="fa-solid fa-link"></i>
+            URL Shortener
+        </h1>
+
+        <p class="subtitle">
+            Convert long URLs into short, shareable links instantly.
+        </p>
+
+        <div class="input-group">
+
+            <input
+            type="text"
+            id="url"
+            placeholder="Paste your long URL here...">
+
+            <button id="shortenBtn">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Shorten
+            </button>
+
+        </div>
+
+        <div id="result" class="result hidden">
+
+            <h3>Your Short URL</h3>
+
+            <input
+            type="text"
+            id="shortUrl"
+            readonly>
+
+            <div class="buttons">
+
+                <button id="copyBtn">
+                    <i class="fa-solid fa-copy"></i>
+                    Copy
+                </button>
+
+                <button id="openBtn">
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                    Open
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        ❤️ Developed by <strong>Mukesh Kumar</strong>
+
+    </footer>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
